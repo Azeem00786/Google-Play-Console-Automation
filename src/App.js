@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <p>Hyperzod Gogole Play Console App Listing Automation</p>
+      <p>Hyperzod Play Console App Listing Automation</p>
       <GenerateEditId />
     </div>
   );
