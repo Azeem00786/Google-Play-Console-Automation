@@ -68,14 +68,18 @@ function GenerateEditId() {
             name="packageName"
             value={formData.packageName}
             onChange={handleInputChange}
+            style={{ width: 280 }}
           />
         </div>
         <div className="inputs">
           <TextField
             id="outlined-basic"
-            label="Enter Access Token Name"
+            label="Enter Access Token"
             variant="outlined"
             name="accessToken"
+            multiline
+            maxRows={10}
+            style={{ width: 400 }}
             value={formData.accessToken}
             onChange={handleInputChange}
           />
