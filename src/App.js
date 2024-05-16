@@ -6,7 +6,7 @@ function App() {
     <div>
       <Header />
       <div style={{ justifyContent: "center", display: "flex" }}>
-        <p>Hyperzod Play Console App Listing Automation</p>
+        <h2>Hyperzod Play Console App Listing Automation</h2>
       </div>
 
       <GenerateEditId />

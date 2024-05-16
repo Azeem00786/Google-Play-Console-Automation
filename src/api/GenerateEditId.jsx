@@ -58,7 +58,7 @@ function GenerateEditId() {
   };
   return (
     <div className="container">
-      <h4 style={{ marginLeft: "20%" }}>Generate EditID</h4>
+      <h4 style={{ marginLeft: "20%" }}>Generate EditID:</h4>
       <div className="inputs">
         <div className="inputs">
           <TextField
