@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import TextField from "@mui/material/TextField";
+import "./EditId.css";
 function GenerateEditId() {
   const [formData, setFormData] = useState({
     packageName: "",
@@ -57,44 +58,51 @@ function GenerateEditId() {
   };
   return (
     <div className="container">
-      <span className="label">Generate Edit Id</span>
+      <h4 style={{ marginLeft: "20%" }}>Generate EditID</h4>
       <div className="inputs">
-        <TextField
-          id="outlined-basic"
-          label="Enter Package Name"
-          variant="outlined"
-          name="packageName"
-          value={formData.packageName}
-          onChange={handleInputChange}
-          className="input-field"
-        />
-        <TextField
-          id="outlined-basic"
-          label="Enter Access Token Name"
-          variant="outlined"
-          name="accessToken"
-          value={formData.accessToken}
-          onChange={handleInputChange}
-          className="input-field"
-        />
-        <div style={{ margin: "15px" }}>
-          <button
-            style={{
-              backgroundColor: "#bebebec2",
-              color: "#000000",
-              border: "none",
-              borderRadius: "5px",
-              marginBottom: "20px",
-              padding: "10px 20px",
-              cursor: "pointer",
-            }}
-            onClick={handleEditId}
-          >
-            Click Me
-          </button>
+        <div className="inputs">
+          <TextField
+            id="outlined-basic"
+            label="Enter Package Name"
+            variant="outlined"
+            name="packageName"
+            value={formData.packageName}
+            onChange={handleInputChange}
+          />
         </div>
-        <span className="label">This is your edit id: {editId}</span>
+        <div className="inputs">
+          <TextField
+            id="outlined-basic"
+            label="Enter Access Token Name"
+            variant="outlined"
+            name="accessToken"
+            value={formData.accessToken}
+            onChange={handleInputChange}
+          />
+        </div>
       </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <button
+          style={{
+            backgroundColor: "#bebebec2",
+            color: "#000000",
+            border: "none",
+            borderRadius: "5px",
+            marginBottom: "20px",
+            padding: "10px 20px",
+            cursor: "pointer",
+          }}
+          onClick={handleEditId}
+        >
+          Click Me
+        </button>
+      </div>
+      <span
+        className="label"
+        style={{ display: "flex", justifyContent: "center" }}
+      >
+        This is your edit id: {editId}
+      </span>
     </div>
   );
 }
